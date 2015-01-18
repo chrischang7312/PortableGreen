@@ -19,7 +19,8 @@
 	background: #42ff23;
 }
 #vidborder{
-		float: left;
+		margin-left: auto;
+    margin-right: auto;
         border :1px solid #444444;
         padding:10px;
         margin: 10px;

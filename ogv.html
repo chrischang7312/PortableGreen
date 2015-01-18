@@ -18,9 +18,10 @@
 		<script src="js/init.js"></script>
 		<script src="js/script.js" type="text/javascript"></script>	
 		<script src="js/initialization.js" type="text/javascript"></script>	
-		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="main.js">
+		</script>
 		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style2.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
@@ -40,25 +41,34 @@
 				<div class="inner">
 					<h2>Upload your video and image </h2>
 					
-					  
-					  Video file:   <input type="file" value="video" id="vid">
+					<form action="ogv.html" method="GET">  
+					  Video file:   <input type="file" name="vids">
 					  <br>
-					  Image file: <input type="file" value="image" id="img">
+					  Image file: <input type="file" name="imgs">
 					  <br><p></p>
-					   <a class="button big special" onClick="upload()">Upload</a>
-					
+					   <input type="submit" value="Submit" />
+					</form>
 					
 				</div>						
 			</section>	
 			
-			 <div class="centers">
-				<video id="video" controls="true">
+			 <div class="container">
+				<br><h2>Live Video</h2>
+				<video id="video" height="300" controls="true">
 				</video>
 			</div>
 			
 			
 			<div class="container" id="vidborder">
-				<section>
+				<h2> Original&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+
+				Chroma Key</h2>
+				<section id="vidborder">
 					<canvas id="c1" width="391" height="225"></canvas>
 					<canvas id="c2" width="391" height="225"></canvas>
 				</section>
