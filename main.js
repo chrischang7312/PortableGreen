@@ -1,11 +1,13 @@
-function upload()
-{
-			 var vid=document.getElementById('vid').value;
-			 var img=document.getElementById('img').value;
-		document.div.canvas.style.background-image="url(" +img ")";
-		
-		var processor = {
+
+ 
+	/*	var vid=document.getElementById('vid').value;
+	var img=document.getElementById('img').value;
+			 console.log(vid);
+			 console.log(img);
+		document.body.style.background ="url(" +img +")";*/
+var processor = {
   timerCallback: function() {
+	
     if (this.video.paused || this.video.ended) {
       return;
     }
@@ -20,14 +22,15 @@ function upload()
   },
   
   doLoad: function() {
+  console.log("here");
     this.video = document.getElementById("video");
     this.c1 = document.getElementById("c1");
     this.ctx1 = this.c1.getContext("2d");
     this.c2 = document.getElementById("c2");
     this.ctx2 = this.c2.getContext("2d");
     this.video.crossOrigin = 'anonymous';
-    this.video.setAttribute("src", vid);
-    /*this.video.innerHTML = "<source src='greentestgood.mp4'></source>";*/
+    this.video.setAttribute("src", 'green.mp4');
+    this.video.innerHTML = "<source src='green.mp4'></source>";
 
     var self = this;
     this.video.addEventListener("play", function() {
@@ -53,8 +56,10 @@ function upload()
     return;
   }
 };
-}
 
 window.onload = function() {
     processor.doLoad();
+	console.log("doLoad");
 }
+
+

@@ -5,7 +5,6 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
-<html>
 	<head>
 		<title>Chroma Key</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -25,13 +24,7 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
-		<style>
 
-		  #c2 {
-			background-image: url(coyote.jpg);
-			background-repeat: no-repeat;
-		  }
-    </style>
 	</head>
 	<body id="top">
 
@@ -51,20 +44,24 @@
 					  Video file:   <input type="file" value="video" id="vid">
 					  <br>
 					  Image file: <input type="file" value="image" id="img">
-					  <br>
-					   <a class="button big special" onClick="upload">Upload</a>
+					  <br><p></p>
+					   <a class="button big special" onClick="upload()">Upload</a>
 					
 					
 				</div>						
 			</section>	
 			
-			 <div>
+			 <div class="centers">
 				<video id="video" controls="true">
 				</video>
 			</div>
-			<div>
-			   <canvas id="c1" width="391" height="225"></canvas>
+			
+			
+			<div class="container" id="vidborder">
+				<section>
+					<canvas id="c1" width="391" height="225"></canvas>
 					<canvas id="c2" width="391" height="225"></canvas>
+				</section>
 			</div>
 			
 		<!-- Footer -->
